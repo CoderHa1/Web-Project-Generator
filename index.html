@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Project Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="logo">
+                <i class="fas fa-code"></i> Code Project Generator
+            </div>
+            <p class="tagline">Find inspiration for your next web development project</p>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab active" data-tab="login">Login</button>
+            <button class="tab" data-tab="signup">Sign Up</button>
+        </div>
+        
+        <div class="tab-content active" id="login">
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <div class="input-group">
+                        <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <div class="input-group">
+                        <span class="input-icon"><i class="fas fa-lock"></i></span>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+        </div>
+        
+        <div class="tab-content" id="signup">
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Name</label>
+                    <div class="input-group">
+                        <span class="input-icon"><i class="fas fa-user"></i></span>
+                        <input type="text" id="signup-name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <div class="input-group">
+                        <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <div class="input-group">
+                        <span class="input-icon"><i class="fas fa-lock"></i></span>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm">Confirm Password</label>
+                    <div class="input-group">
+                        <span class="input-icon"><i class="fas fa-lock"></i></span>
+                        <input type="password" id="signup-confirm" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            </form>
+        </div>
+        
+        <div class="auth-footer">
+            <p>Generate amazing web project ideas with our tool!</p>
+        </div>
+    </div>
+    
+    <script src="js/auth.js"></script>
+</body>
+</html> 
